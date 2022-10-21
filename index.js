@@ -13,11 +13,21 @@ function compareLuckyOrNot(sum)
 
     if((sum%(luckyNumber.value))===0)
     {
-        luckyText.innerHTML = "Your BirthDay Is So Lucky"
+        setTimeout(()=>
+        {
+            luckyText.innerHTML = "Your BirthDay Is So Lucky";
+            
+
+        },2000)
+       
     }
     else
     {
-        luckyText.innerHTML= "Soory Its Not So Lucky"
+        setTimeout(()=>
+        {
+            luckyText.innerHTML = "Your BirthDay Is Not So Lucky";
+
+        },2000)
     }
 
 }
